@@ -31,3 +31,12 @@ function show() {
     document.getElementById("navMenu").classList.add("!start-0");
     document.body.classList.add("overflow-hidden");
 }
+
+function opennav() {
+    document.getElementById("menu").style.left = "0%";
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+}
+function closenav() {
+    document.getElementById("menu").style.left = "-100%";
+    document.getElementsByTagName("body")[0].style.overflow = "scroll";
+}
